@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Card</title>
+
+
+    <style>
+        body {
+
+            background-color: rgb(53, 28, 28);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Card {
+
+            width: 180px;
+            height: 120px;
+            background-color: darkcyan;
+            padding: 40px 60px;
+            margin-top: 100px;
+            transition: all .8s;
+            border-radius: 9px;
+            box-shadow: 0px 20px 50px rgb(99, 57, 57);
+        }
+
+        .imageBox img {
+
+            height: 100%;
+            width: 100%;
+            position: relative;
+            transform: translateY(-120px);
+            border-radius: 7px;
+            box-shadow: 0px 15px 30px rgb(38, 28, 28);
+        }
+
+        .content {
+
+            text-align: center;
+            color: rgb(53, 28, 28);
+            transform: translateY(-500px);
+            opacity: 0;
+            margin-top: 30px;
+        }
+
+        .content h2 {
+
+            color: rgb(11, 5, 82);
+            text-shadow: 1px 1px 3px rgb(70, 54, 54);
+        }
+
+        .content p {
+
+            text-shadow: 1px 2px 3px rgb(100, 88, 88);
+        }
+
+        .Card:hover {
+
+            width: 190px;
+            height: 220px;
+            cursor: pointer;
+        }
+
+        .Card:hover>.content {
+
+            transform: translateY(-130px);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Card">
+
+        <div class="imageBox"><img src="images/FB_IMG_1706876464432.jpg" alt="Saeed"></div>
+
+        <div class="content">
+
+            <h2>Keep Smiling</h2>
+            <p>Hello, Iam Saeed Ahmed from Dadu city.I study in computer science department Fast Univerty Peshawar
+                Campus</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
